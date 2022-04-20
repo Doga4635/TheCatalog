@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ce216group1.thecatalog.Controller">
+   <children>
+      <TreeView editable="true" layoutX="176.0" layoutY="39.0" prefHeight="238.0" prefWidth="249.0" />
+      <Button layoutX="374.0" layoutY="277.0" mnemonicParsing="false" text="Delete" />
+      <Label layoutX="10.0" layoutY="313.0" prefHeight="17.0" prefWidth="62.0" text="Type:" />
+      <TextField layoutX="41.0" layoutY="309.0" />
+      <Button layoutX="200.0" layoutY="309.0" mnemonicParsing="false" text="Create" />
+      <Label layoutX="10.0" layoutY="348.0" text="Item:" />
+      <TextField layoutX="41.0" layoutY="344.0" />
+      <Button layoutX="200.0" layoutY="344.0" mnemonicParsing="false" text="Create" />
+      <Button layoutX="290.0" layoutY="277.0" mnemonicParsing="false" text="Edit Window" />
+      <Button layoutX="235.0" layoutY="277.0" mnemonicParsing="false" text="Display" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="New">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Open" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
